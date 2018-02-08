@@ -11,10 +11,45 @@ React-Native中使用http://iconfont.cn
 --------------------------------------
 第一种使用方式
 安装phtho，安装pip install fonttools
-将iconfont.ttt 和icon-map.py放在同一目录下，执行 python icon-map.py iconfont.ttf iconfont.js 生成相关的iconfont.js文件
+将iconfont.ttt 和icon-map.py放在同一目录下，执行 python icon-map.py iconfont.ttf iconfont.js 生成相关的iconfont.js文件,
 ![](https://github.com/tailanx/IconSample/blob/master/image/icon4.png)
+在android项目中，将iconfont.ttf文件放入`/src/assets/fonts`目录下，ios中放入创建的fonts目录下 ，将iconfont.js文件放入src/assets/fonts目录下
+```java
+const FONTSIZE = {
+    xxs:15,
+    xs:18,
+    sm:21,
+    md:22,
+    lg:36
+}
+export  default  class IconFont extends Component{
+    render(){
+        const {type,color,size,styles} = this.props
+        return (
+            <Text
+                style={[{
+                    color:color||"#666",
+                    fontSize:size|| FONTSIZE.xxs,
+                    fontWeight:'normal',
+                    fontStyle:'normal',
+                    fontFamily:'iconfont',
+                    alignItems:'center',
+                    textAlignVertical:'center',
+                    textAlign:'center',
+                    backgroundColor:"rgba(0,0,0,0)"
 
-第二种使用方式
+                },styles]}
+
+            >
+                {icons[type]}
+            </Text>
+
+        )
+    }
+}
+
+
+第二种使用方式使用·react-native-vector-icons·，官方地址[!](https://github.com/oblador/react-native-vector-icons)
 
 
 
