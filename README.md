@@ -50,6 +50,10 @@ export  default  class IconFont extends Component{
 
 
 第二种使用方式使用·react-native-vector-icons·，官方地址[!](https://github.com/oblador/react-native-vector-icons)
+安装 npm install react-native-vector-icons --save
+添加原生 react-native link react-native-vector-icons
+
+
 
 
 
