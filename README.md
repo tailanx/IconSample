@@ -52,7 +52,14 @@ export  default  class IconFont extends Component{
 第二种使用方式使用·react-native-vector-icons·，官方地址[!](https://github.com/oblador/react-native-vector-icons)
 安装 npm install react-native-vector-icons --save
 添加原生 react-native link react-native-vector-icons
-
+    ·注意react的版本兼容性 推荐‘react：'16.0.0-beta.5'’,'react-native:0.49.3'
+    自定义icon
+![](https://github.com/tailanx/IconSample/blob/master/image/icon5.png)
+![](https://github.com/tailanx/IconSample/blob/master/image/icon6.png)
+    使用
+![](https://github.com/tailanx/IconSample/blob/master/image/icon7.png)
+    显示
+![](https://github.com/tailanx/IconSample/blob/master/image/icon8.png)
 
 
 
